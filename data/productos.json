@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nombre": "Labial Rouge",  "precio": 6500,  "img": "./img/labial-rouge.jpg" },
+  { "id": 2, "nombre": "Perfume Amber", "precio": 18500, "img": "./img/perfume-amber.jpg" },
+  { "id": 3, "nombre": "Crema Hydrat",  "precio": 9200,  "img": "./img/crema-hydrat.jpg" }
+]

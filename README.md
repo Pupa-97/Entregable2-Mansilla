@@ -1,35 +1,81 @@
-# Entregable 2 - Mansilla
+Proyecto Final – Simulador de Compras
 
-## Descripción
-Este proyecto es un **simulador de compras** realizado en JavaScript, como parte de la segunda entrega del curso.  
-Permite seleccionar productos, agregarlos a un carrito y calcular el total.  
-El estado del carrito se guarda en **localStorage**, por lo que al actualizar la página se mantiene la información.
+Autora: Maria Eugenia Mansilla
+Carrera: JS Flex – Coderhouse
 
-## Funcionalidades
-- Renderizado dinámico de productos con **DOM**.
-- Botones para **agregar productos al carrito**.
-- Visualización del carrito en pantalla.
-- **Persistencia con localStorage** para mantener el carrito al refrescar.
+Objetivo general
 
-## Estructura
-```
-Entregable2-Mansilla/
+Crear un simulador interactivo en JavaScript que simula el flujo completo de compra de un Ecommerce.
+
+El proyecto permite:
+
+Ver productos cargados dinámicamente desde un archivo JSON.
+
+Agregar y quitar productos al carrito.
+
+Modificar cantidades sin duplicar ítems.
+
+Vaciar el carrito.
+
+Finalizar la compra con un formulario precargado.
+
+Mostrar confirmaciones y avisos usando SweetAlert2 (en reemplazo de alert/prompt/confirm).
+
+Tecnologías utilizadas
+
+HTML5 (estructura y etiquetas semánticas)
+
+CSS3 (diseño responsive, grid y estilos modernos)
+
+JavaScript (ES6+)
+
+JSON local (simulación de datos remotos)
+
+Librería externa: SweetAlert2
+
+Funcionalidad principal
+
+Carga de productos desde data/productos.json de forma asíncrona con fetch.
+
+Render dinámico de tarjetas de productos en el HTML.
+
+Carrito de compras con:
+
+Manejo de cantidades (+ / –)
+
+Eliminar producto individual
+
+Vaciar carrito completo
+
+Persistencia en LocalStorage
+
+Formulario de Checkout con:
+
+Campos precargados (nombre, email, dirección, medio de pago)
+
+Validación básica de campos obligatorios
+
+Mensajes con SweetAlert2
+
+Limpieza del carrito tras la compra
+
+Estructura del proyecto
+
+ProyectoFinal-Mansilla/
 │
 ├── index.html
 ├── README.md
+│
 ├── css/
-│   ── style.css 
-└── js/
-    ── app.js
-```
-
-## Tecnologías
-- HTML5
-- CSS3
-- JavaScript (DOM, eventos, localStorage)
-
-## Uso
-1. Clonar el repositorio o descargar el proyecto.
-2. Abrir `index.html` en el navegador.
-3. Agregar productos al carrito desde los botones.
-4. El carrito se guarda automáticamente en `localStorage`.
+│   └── style.css
+│
+├── js/
+│   └── app.js
+│
+├── data/
+│   └── productos.json
+│
+└── img/
+    ├── labial-rouge.jpg
+    ├── perfume-amber.jpg
+    └── crema-hydrat.jpg
